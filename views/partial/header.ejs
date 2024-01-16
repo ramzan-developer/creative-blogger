@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Blogger</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F7F9FB;
+        }
+
+        header {
+            background-color: #273C66;
+            padding: 15px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 2px 10px #00000092;;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .button {
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .buttons {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+        }
+
+        .headertext{
+          color: white;
+          text-decoration: none;
+          padding-top: 5%;
+          margin-left: 5px;
+          font-weight: bold;
+          text-shadow: 2px 2px 12px black ;
+        }
+        .headertext:hover {
+          color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"> <svg  xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="red" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-terminal"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+      <span class="fs-4" >Creative Blogger</span></div>
+    <div class="buttons">
+        
+        <a class="headertext" href="http://localhost:3000/">Home</a>
+        <a class="headertext" href="http://localhost:3000/ViewPost">View Post</a>
+        <a class="headertext" href="http://localhost:3000/NewPost">New Post</a>
+    </div>
+</header>
+
+<!-- Your content goes here -->
+
+</body>
+</html>
+
+
+ 

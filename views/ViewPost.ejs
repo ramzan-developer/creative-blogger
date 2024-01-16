@@ -1,0 +1,70 @@
+<%- include("./partial/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewPost</title>
+     <style>
+        body {
+            background-color: #F7F9FB;
+        }
+        .MainBox {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #c6e3ff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tt, .dd{
+            background-color: #F7F9FB;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #080808;
+            border-radius: 6px;
+        }
+        .subbox{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+     </style>
+</head>
+<body>
+    <% if(locals.Title && locals.Description) { %>
+    <div class="MainBox">
+        <div class="subbox">
+            <h3>Your Title is</h3>
+            <div class="tt"> 
+            <%= Title %>
+            </div>
+        <h3>Your Description is</h3>
+            <div class="dd">
+            <%= Description %>
+            </div>
+        </div>
+        
+    <% } else { %>
+        <h2>Try Again Letter!</h2>
+    <% } %>
+
+    </div>
+
+
+
+
+   
+          
+         
+    
+</body>
+</html>
+    
+
+
+
+
+<%- include("./partial/footer.ejs") %>

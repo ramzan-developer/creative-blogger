@@ -1,0 +1,95 @@
+<%- include("./partial/header.ejs") %>
+
+<link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F7F9FB;
+            margin: 0;
+            padding: 0;
+        }
+
+        .containerr {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #c6e3ff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #080808;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="containerr">
+    <form action="/Submit" method="post">
+        <div class="form-group">
+            <label for="blog">Blog Title</label>
+            <input name="blogTitle" type="text" id="blogTitle" placeholder="Enter your blog title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="blog">Blog Description</label>
+            <textarea name="blogDescription" id="blogDescription" rows="8" placeholder="Enter your blog description" required></textarea>
+        </div>
+        <div class="publish">
+            <button  type="submit" value="Publish">Publish</button>
+        </div>
+        
+       <%# <button type="submit">Submit</button> %> 
+    </form>
+</div>
+
+<%# <form action="/submit" method="post">
+    <label for="title">title</label>
+    <input type="text" id="xx" name="xx">
+    <input type="submit">
+</form> %>
+
+</body>
+</html>
+<%- include("./partial/footer.ejs") %>
